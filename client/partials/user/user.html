@@ -1,0 +1,24 @@
+<div id = 'navbar'>
+	<a href="#/user/{{ user._id }}">Home</a> | <a href="#/showTournaments">Create a tournament / View Tournaments</a> | <a href="" ng-click= 'logout()'>Logout</a>
+</div>
+<h1>Welcome, {{user.first_name}}, to Tompkins Tournament</h1>
+
+<div id = 'form'>
+	<h2>Edit User</h2>
+	<form> 
+		<label class = 'user'>First Name:<input type = 'text' value = '{{user.first_name}}' ng-model = 'editUser.first_name' placeholder="{{user.first_name}}"></label>
+		<label class = 'user'>Last Name: <input type = 'text' placeholder = '{{user.last_name}}' ng-model = 'editUser.last_name'></label>
+		<label class = 'user'>Location<input type = 'text' placeholder = '{{user.location}}' ng-model = 'editUser.location'></label>
+		<label class = 'user'>Program<input type = 'text' placeholder = '{{user.program}}' ng-model = 'editUser.program'></label>
+		<label class = 'user'>Phone Number:<input type = 'number' placeholder = '{{user.phoneNumber}}' ng-model = 'editUser.phoneNumber'></label>
+		<label class = 'user'>Email: <input type = 'text' placeholder = '{{user.email}}' ng-model = 'editUser.email'></label>
+		<label class = 'user'>Password: <input type = 'password' ng-model = 'editUser.password'></label>
+		<button ng-click = 'updateUser(editUser)'>Submit</button>
+	</form>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+<div id = 'navbar'>
+	<a href="#/user/{{ user._id }}">Home</a> | <a href="#/showTournaments">Create a tournament</a> | <a href="" ng-click= 'logout()'>Logout</a>
+</div>
+
+<h1> Title of Draw name </h1>
+
+
+<main id="tournament">
+	<ul class="round round-1">
+		<li class="spacer">&nbsp;</li>
+		<!--  -->
+		<li class="game game-top" ng-click = "winner1 = users[0].first_name">{{users[0].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner1 = users[1].first_name'>{{users[1].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		<!--     -->
+		<li class="game game-top" ng-click = "winner2 = users[2].first_name">{{users[2].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner2 = users[3].first_name'>{{users[3].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner3 = users[4].first_name">{{users[4].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner3 = users[5].first_name'>{{users[5].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner4 = users[6].first_name">{{users[6].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner4 = users[7].first_name'>{{users[7].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner5 = users[8].first_name">{{users[8].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner5 = users[9].first_name'>{{users[9].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner6 = users[10].first_name">{{users[10].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner6 = users[11].first_name'>{{users[11].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner7 = users[12].first_name">{{users[12].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner7 = users[13].first_name'>{{users[13].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click = "winner8 = users[14].first_name">{{users[14].first_name}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner8 = users[15].first_name'>{{users[15].first_name}}</li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-2">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click='winner9 = winner1'>
+			{{winner1}}
+		</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom " ng-click='winner9 = winner2'>
+			{{winner2}}
+		</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click='winner10 = winner3'>
+			{{winner3}}
+		</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom" ng-click='winner10= winner4'>
+			{{winner4}}
+		</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click='winner11= winner5'>
+			{{winner5}}
+		</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom" ng-click='winner11= winner6'>
+			{{winner6}}
+		</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click='winner12= winner7'>
+			{{winner7}}
+		</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom" ng-click='winner12=winner8'>
+			{{winner8}}
+		</li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-3">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click="winner13=winner9">{{winner9}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom" ng-click="winner13=winner10">{{winner10}}</li>
+
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click="winner14=winner11">{{winner11}}</li>
+		<li class="game game-spacer ng-click">&nbsp;</li>
+		<li class="game game-bottom" ng-click="winner14=winner12">{{winner12}}</li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-4">
+		<li class="spacer">&nbsp;</li>
+		
+		<li class="game game-top" ng-click="winner15=winner13">{{winner13}}</li>
+		<li class="game game-spacer">&nbsp;</li>
+		<li class="game game-bottom" ng-click="winner15=winner14">{{winner14}}</li>
+		
+		<li class="spacer">&nbsp;</li>
+	</ul>	
+	<ul class= "round round-5">
+		<li class-"spacer">&nbsp;</li>
+			<li class="game game-top">{{winner15}}
+			</li>
+	</ul>
+</main>
+
+</main>

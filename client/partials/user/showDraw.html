@@ -1,0 +1,30 @@
+<div id = 'navbar'>
+	<a href="#/user/{{ user._id }}">Home</a> | <a href="#/showTournaments">Create a tournament</a> | <a href="" ng-click= 'logout()'>Logout</a>
+</div>
+
+<h2>This is {{draw.name}}</h2>
+
+<h4>Users Currently in the Tournament and Available to add to this Draw</h4>
+
+
+<div ng-repeat = 'player in players' ng-if = " player.inTournament == 'tournament'">{{player.first_name}}
+<button ng-click ='addUtoD(player)'>Add Player to Draw</button>
+</div>
+<!-- possibly can find the particular tournament by using that id? -->
+<br>
+<br>
+<br>
+
+<h4>Players in draw</h4>
+
+<div ng-repeat ='user in users' >{{user.first_name}}
+<button ng-click ='RemoveUfromD(user)'>Remove Player from the Draw</button></div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<button ng-click= 'viewcreateddraw(draw._id)'>View Created Draw</button>
+

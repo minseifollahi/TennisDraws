@@ -1,0 +1,18 @@
+<div id = 'navbar'>
+	<a href="#/user/{{ user._id }}">Home</a> | <a href="#/showTournaments">Create a tournament</a> | <a href="" ng-click= 'logout()'>Logout</a>
+</div>
+
+<p ng-repeat= 'user in users'> {{user.first_name}}</p>
+
+<h2>Create a Tournament</h2>
+<form>
+	<input type='text' ng-model='newTournament.name' placeholder="Draw Name">
+	<input type='date' ng-model='newTournament.date' placeholder='Date'>
+	<button ng-click='createTournament(newTournament)'>Create Tournament</button>
+</form>
+
+<h2>Current Tournaments</h2>
+<p ng-repeat = 'tournament in tournaments'> {{ tournament.name }}, {{tournament.date | date: 'MMMM dd, yyyy'}}
+<button ng-click='removeTournament(tournament)'>Delete</button>
+<button ng-click='showTournament(tournament)'>View</button>
+</p>
